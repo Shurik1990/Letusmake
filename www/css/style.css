@@ -71,21 +71,44 @@ nav a:hover {
 /* Main */
 main {
     background: url("../images/Hero.png") no-repeat; 
-    height: 500px;
-    overflow: hidden; 
-    display: block;
+    height: 500px; 
+	background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.caption {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font: 40px Gotham Medium, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: 900;
+    color: #303030;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.rubric {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    font: 16px Georgia Italic, sans-serif;
+    font-weight: 600;
+    color: #626262;
+    margin-bottom: 70px;
 }
 /* Button */
 .button-circle {
     width: 80px;
-    height: 80px;
-    margin: 370px 550px;    
+    height: 80px;    
     padding: 0;
     text-align: center;
+	
 }
 button[name="circle"] {
-    display: block;
-    position: relative;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -113,11 +136,11 @@ button[name="circle"]:active {
 }
 /* Article Work */
 .work {display: flex; height: 190px;}
-.text-work {width: 540px; height: 115px; padding-left: 50px; margin: auto;}
+.text-work {width: 540px; height: 115px; padding-left: 20px; margin: auto;}
 /* List of works */
 .list-of-work {
     display: flex;
-    padding-left: 50px;
+    padding-left: 20px;
     margin: auto;
     list-style: none;
     flex-flow: wrap;
@@ -142,10 +165,10 @@ button[name="circle"]:active {
     border-bottom: 1px solid #e5e5e5;
 }
 .team {display: flex; height: 190px; margin-top: 40px; margin-bottom: 30px;}
-.text-team {width: 540px; height: 140px; padding-left: 70px; margin: auto;}
+.text-team {width: 540px; height: 140px; padding-left: 20px; margin: auto;}
 .team-list {
     display: flex;
-    padding-left: 50px;
+    padding-left: 20px;
     padding-bottom: 60px;
     margin: auto;
     flex-flow: wrap;
@@ -196,9 +219,10 @@ button[name="circle"]:active {
     font: 15px Gotham Medium, serif;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 1px;
     margin: auto;
-    width: 160px;
+    width: 180px;
     height: 20px;
 }
 .profession {
@@ -229,7 +253,7 @@ button[name="circle"]:active {
     padding-right: 15px;
 }
 /* Contact */
-.text-contact {width: 190px; height: 50px; padding-left: 70px; padding-top: 40px; padding-bottom: 40px; margin: auto;}
+.text-contact {display: flex; width: 190px; height: 50px; padding-left: 20px; padding-top: 40px; padding-bottom: 40px; margin: auto;}
 .left {
     display: flex;
     margin-left: 130px;
@@ -251,6 +275,7 @@ button[name="circle"]:active {
 }
 .contact-box {
     display: flex;
+	justify-content: center;
     margin-bottom: 80px;
 }
 .right {
